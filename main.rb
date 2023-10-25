@@ -10,7 +10,7 @@ SQL
 names = contacts.map { |contact| contact[1] }
 
 get '/' do
-    friends = names.map { | name | "<p>#{name}</p>" }
-    "<h1>Friends</h1>#{friends.join(' ')}"
+    friends = names.map { | name | "<p>#{name}</p>" }.join(' ')
+    "<h1>Friends</h1>#{friends}"
 end
   
